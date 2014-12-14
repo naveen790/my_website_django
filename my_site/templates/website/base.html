@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>{%block title%} {%endblock%}</title>
+  <meta name="description" content="Naveen Natarajan Website" />
+  <meta name="keywords" content="Naveen Natarajan, Webpage and details" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style/style.css" />
+  <link rel="shortcut icon" href="{{ STATIC_URL}}img/n.jpg" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+         <h1>NAVEEN NATARAJAN</h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          {%block selected%} {%endblock%}
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Links</h1>
+        <ul>
+          <li><a href="http://cs.jhu.edu/" target="blank"> JHU CS Department</a></li>
+          <li><a href="https://www.google.com/">Google</a></li>
+        </ul>
+		<img style="width: 250px; height: 220px;" alt="me" src="{{STATIC_URL}}img/image.jpg"><br>
+		
+      </div>
+      <div id="content">
+	    {%block body%}{%endblock%}      
+      </div>
+    </div>
+    <div id="footer">
+      <p><a href="/naveen/">HOME</a> | <a href="/naveen/resume">RESUME</a> | <a href="/naveen/courses">COURSES</a> | <a href="/naveen/contact">CONTACT</a></p>
+	  <p> Naveen Natarajan 2014<p>
+      </div>
+  </div>
+</body>
+</html>

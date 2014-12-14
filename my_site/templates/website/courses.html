@@ -1,0 +1,48 @@
+{% extends 'website/base.html' %}
+
+{%block title%} NAVEEN NATARAJAN {%endblock%}
+
+{%block selected%}
+ 		  <li><a href="/naveen/">HOME</a></li>
+          <li><a href="/naveen/resume">RESUME</a></li>
+          <li class="selected"><a href="/naveen/courses">COURSES</a></li>
+          <li><a href="/naveen/contact/">CONTACT</a></li>
+ {%endblock%}
+
+ {%block body%}
+ 	    <h1><b>Graduate Courses</b></h1>
+        <h3><b><u>Fall 2011</u></b></font></h3>
+		<ul>
+		  <li> Theory of Computation </li>
+		  <li> Parallel Programming </li>
+		  <li> Database Systems </li>
+		</ul>
+		<h3><b><u>Spring 2012</u></b></font></h3>
+		<ul>
+		  <li> Algorithms </li>
+		  <li> Computer Graphics </li>
+		  <li> Healthcare Security Management </li>
+		  <li> Artificial Intelligence</li>
+		  <li> Working on Master's Thesis(Project) </li>
+		</ul>
+		<h3><b><u>Summer 2012</u></b></font></h3>
+		<ul>
+		  <li> Internship at <a href="http://www.chop.edu/" target="blank"> The Children's Hospital of Philadelphia </a> </li>
+		</ul>
+		<h3><b><u>Fall 2012</u></b></font></h3>
+		<ul>
+		  <li> Object Oriented Software Engineering </li>
+		  <li> Big Data, Small Language & Scalable Systems </li>
+		  <li> Data Intensive Computing </li>
+		  <li> Machine Learning (Audit)</li>
+		  <li> Master's Thesis(Project) </li>
+		</ul>
+              <h3><b><u>Spring 2013</u></b></font></h3>
+		<ul>
+		  <li> Information Retrieval & Web Agents </li>
+		  <li> Master's Thesis(Project) </li>
+		</ul>
+
+		<h3><b><a href="{{STATIC_URL}}img/ugcourses.pdf" target="blank">Undergraduate Course List</a></b></h3> 
+		</div>
+ {%endblock%}

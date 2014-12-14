@@ -1,0 +1,25 @@
+{% extends 'website/base.html' %}
+
+{%block title%} NAVEEN NATARAJAN {%endblock%}
+
+{%block selected%}
+ 		 <li><a href="/naveen/">HOME</a></li>
+          <li class="selected"><a href="/naveen/resume">RESUME</a></li>
+          <li><a href="/naveen/courses">COURSES</a></li>
+          <li><a href="/naveen/contact/">CONTACT</a></li>
+ {%endblock%}
+
+ {%block body%}
+ 	    <h1><b>Resume</b></h1>
+	 <font color=red>Resume last updated on November 2013</font><br><br><br>
+        <ul>
+		<li><a href="{{STATIC_URL}}img/NaveenNatarajan.pdf" target="blank">View Resume</a></li>
+		<br>
+		<li><a href="{{STATIC_URL}}img/NaveenNatarajan.pdf" download>Download Resume(PDF)</a></li>
+		<br>
+		<li><a href="{{STATIC_URL}}img/NaveenNatarajan.docx">Download Resume(Word)</a></li>
+		<br>
+        <li><a href="http://www.linkedin.com/profile/view?id=69725402&trk=tab_pro" target="blank">View My Linkedin Profile</a></li>
+		</ul>
+ {%endblock%}
+ 

@@ -1,0 +1,20 @@
+{% extends 'website/base.html' %}
+
+{%block title%} NAVEEN NATARAJAN {%endblock%}
+
+{%block selected%}
+ 		  <li><a href="/naveen/">HOME</a></li>
+          <li><a href="/naveen/resume">RESUME</a></li>
+          <li><a href="/naveen/courses">COURSES</a></li>
+          <li class="selected"><a href="/naveen/contact/">CONTACT</a></li>
+ {%endblock%}
+
+ {%block body%}
+<br><br><br><br><br>
+        <h1><b>Contact Information</b></h1>
+		<font size="4"><b><i> E-Mail :</i> </b> <br></font>
+		<font size="3">&nbsp;&nbsp;&nbsp;<b> naveen.natz</b>@<b>gmail.com</b></font>&nbsp;&nbsp;&nbsp;<a href="mailto:naveen.natz@gmail.com"><img src="{{STATIC_URL}}img/mail.jpg" height="30" width="30"> </a> <br>
+		<font size="3">&nbsp;&nbsp;&nbsp;<b> naveen.n</b>@<b>outlook.com</b></font>&nbsp;&nbsp;&nbsp;<a href="mailto:naveen.n@outlook.com"><img src="{{STATIC_URL}}img/mail.jpg" height="30" width="30"> </a> <br><br>
+		</ul>
+{%endblock%}
+
